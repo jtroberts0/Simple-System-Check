@@ -22,8 +22,8 @@ l2": True, "SuSEfirewall2_init": True, "sysstat": True, "systemd-journald": True
 s": True, "systemd-sysctl": True, "systemd-tmpfiles-setup-dev": True, "systemd-udev-root-symlink": True, "systemd-udev-trigger": True, "systemd-udevd": True, "systemd-update-utmp": Tr
 ue, "systemd-vconsole-setup": True, "systemimager-server-netbootmond": True, "systemimager-server-rsyncd": True, "tempo_imaging_auto_script": True, "warp_time_before_ntp": True, "wick
 ed": True, "wickedd-auto4": True, "wickedd-dhcp4": True, "wickedd-dhcp6": True, "wickedd-nanny": True, "wickedd": True, "xinetd": True}
-mounts = {'/ssg': True, '/glade2': False, '/glade/p': False, '/glade/u': False, '/gpfs/pbs': False}
-fsspace = {'/ssg': 95, '/': 90}
+mounts = {'/mount1': True, '/mount2: False, '/mount1/home': False, '/mount2/bin': False,}
+fsspace = {'/tmp': 95, '/': 90}
 
 def get_fsspace(mnt):
         return int(commands.getoutput('df {0}'.format(mnt)).split('\n')[1].split()[4][:-1])
