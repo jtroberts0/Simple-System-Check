@@ -45,12 +45,6 @@ def is_mounted(mnt):
         mounted = os.path.ismount(mnt)
         return mounted
 
-def file_exists(file):
-        if os.path.isfile(file):
-                return True
-        else:
-                return False
-
 ###     MEMORY
 M = get_memory()
 if M == mem_expect:
